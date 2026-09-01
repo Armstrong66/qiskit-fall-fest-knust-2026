@@ -1,0 +1,26 @@
+{
+  "title": "Past Edition Highlights",
+  "subtitle": "Glimpses from previous Qiskit Fall Fest workshops, student hackathons, and global celebrations.",
+  "items": [
+    {
+      "image": "/assets/gallery/past-highlight-1.png",
+      "caption": "Hands-on Quantum Algorithm Demonstration & Qiskit Code Execution",
+      "year": "2025 Edition"
+    },
+    {
+      "image": "/assets/gallery/past-highlight-2.png",
+      "caption": "Student Workshop Session & Quantum Circuit Construction",
+      "year": "2025 Edition"
+    },
+    {
+      "image": "/assets/gallery/past-highlight-3.jpg",
+      "caption": "Global Student Quantum Community & Campus Meetup",
+      "year": "2025 Edition"
+    },
+    {
+      "image": "/assets/gallery/past-highlight-4.png",
+      "caption": "Interactive Hackathon Problem Solving & Team Projects",
+      "year": "2025 Edition"
+    }
+  ]
+}

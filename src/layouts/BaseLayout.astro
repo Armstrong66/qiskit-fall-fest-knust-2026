@@ -1,0 +1,118 @@
+---
+import '../styles/tokens.css';
+import { siteConfig } from '../site.config';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = `${siteConfig.event.name} — ${siteConfig.event.theme}`,
+  description = siteConfig.event.description,
+  image = "/assets/qff-global/Hero 1 without title.png",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://qiskit-fall-fest-knust.vercel.app');
+---
+
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/qff-global/badge-pink.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Qiskit, IBM Quantum, Quantum Computing, KNUST, Fall Fest 2026, Ghana, Hackathon, Physics" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+  </head>
+  <body class="relative bg-[#080b11] text-carbon-50 antialiased selection:bg-brand-500/30 selection:text-white min-h-screen overflow-x-hidden">
+    <!-- Ambient Dynamic Quantum Glow Canvas & Orbs -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+      <div class="quantum-grid-bg absolute inset-0 opacity-40"></div>
+      
+      <!-- Purple Ambient Glow Orb (Top-Left) -->
+      <div class="glow-orb top-[-10%] left-[-10%] w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] bg-brand-600/25"></div>
+      
+      <!-- Cyan Ambient Glow Orb (Top-Right) -->
+      <div class="glow-orb top-[20%] right-[-10%] w-[450px] h-[450px] sm:w-[650px] sm:h-[650px] bg-quantum-cyan/20"></div>
+
+      <!-- Blue Glow Orb (Middle-Left) -->
+      <div class="glow-orb top-[55%] left-[-5%] w-[400px] h-[400px] bg-quantum-electric/20"></div>
+
+      <!-- Magenta Glow Orb (Bottom-Right) -->
+      <div class="glow-orb bottom-[-5%] right-[10%] w-[500px] h-[500px] bg-quantum-magenta/15"></div>
+
+      <!-- Mouse Spotlight Light Follower -->
+      <div id="spotlight" class="absolute w-[600px] h-[600px] rounded-full bg-brand-500/[0.07] blur-[100px] -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+    </div>
+
+    <!-- Main Content wrapper with z-index above ambient canvas -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <slot />
+    </div>
+
+    <!-- Client Script for Interactive Mouse Glow & Hover Focus -->
+    <script>
+      // Interactive mouse follower spotlight
+      const spotlight = document.getElementById('spotlight');
+      if (spotlight && window.matchMedia('(pointer: fine)').matches) {
+        window.addEventListener('mousemove', (e) => {
+          spotlight.style.left = `${e.clientX + window.scrollX}px`;
+          spotlight.style.top = `${e.clientY + window.scrollY}px`;
+          spotlight.style.opacity = '1';
+        });
+        document.addEventListener('mouseleave', () => {
+          spotlight.style.opacity = '0';
+        });
+      }
+
+      // Smooth highlight of active section during scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            if (id) {
+              document.querySelectorAll(`nav a[href="#${id}"]`).forEach((link) => {
+                link.classList.add('text-brand-300', 'border-b-brand-400');
+                link.classList.remove('text-carbon-300');
+              });
+            }
+          } else {
+            const id = entry.target.getAttribute('id');
+            if (id) {
+              document.querySelectorAll(`nav a[href="#${id}"]`).forEach((link) => {
+                link.classList.remove('text-brand-300', 'border-b-brand-400');
+                link.classList.add('text-carbon-300');
+              });
+            }
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+
+      document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
+</html>

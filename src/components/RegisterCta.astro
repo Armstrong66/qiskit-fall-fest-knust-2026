@@ -1,0 +1,76 @@
+---
+import { siteConfig } from '../site.config';
+import Button from './ui/Button.astro';
+import TbdBadge from './ui/TbdBadge.astro';
+---
+
+<section id="register" class="py-20 sm:py-28 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="relative rounded-3xl overflow-hidden p-8 sm:p-14 lg:p-16 border border-brand-500/40 bg-gradient-to-br from-[#121722]/95 via-[#18112e]/90 to-[#0a1224]/95 shadow-glow-md">
+      
+      <!-- Decorative background blur mesh -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-500/25 blur-[100px] pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-quantum-cyan/20 blur-[100px] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center">
+        
+        <div class="inline-flex mb-6">
+          <TbdBadge text="Registrations Open" size="md" />
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+          Ready to Step into the <span class="text-gradient">Quantum Era?</span>
+        </h2>
+
+        <p class="text-base sm:text-lg text-carbon-200 mb-10 max-w-2xl leading-relaxed">
+          Secure your free spot for Qiskit Fall Fest KNUST 2026. Gain hands-on experience with IBM Quantum cloud systems, learn from experts, and compete in the hackathon.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <Button
+            href={siteConfig.links.register}
+            variant="primary"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto text-base sm:text-lg px-8 py-4 shadow-glow-md"
+          >
+            <span>Register Now on Luma</span>
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </Button>
+
+          <Button
+            href={`mailto:${siteConfig.links.email}`}
+            variant="secondary"
+            size="lg"
+            class="w-full sm:w-auto"
+          >
+            <span>Contact Chapter</span>
+          </Button>
+        </div>
+
+        <!-- Footnote details -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-carbon-400">
+          <span class="flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            Zero Cost Admission
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+            Virtual & Inclusive
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-quantum-cyan"></span>
+            Certificates Awarded
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

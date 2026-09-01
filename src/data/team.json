@@ -1,0 +1,72 @@
+{
+  "sectionTitle": "Meet the Organizing Team",
+  "sectionSubtitle": "The student leaders and quantum researchers bringing Qiskit Fall Fest 2026 to KNUST.",
+  "organizers": [
+    {
+      "id": "armstrong",
+      "name": "Armstrong",
+      "role": "Lead Organizer & Qiskit Advocate",
+      "department": "Mathematical & Computational Physics Unit, Dept. of Physics, KNUST",
+      "bio": "Leading the Qiskit KNUST chapter and coordinating the 2026 Fall Fest curriculum, hackathons, and IBM Quantum relations.",
+      "image": "/assets/knust/organizers/armstrong.png",
+      "initials": "AM",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com",
+        "github": "https://github.com"
+      }
+    },
+    {
+      "id": "technical-lead",
+      "name": "Kwame Mensah",
+      "role": "Technical & Workshops Lead",
+      "department": "Dept. of Physics / Computer Science, KNUST",
+      "bio": "Designing interactive quantum circuit labs, algorithm walkthroughs, and error mitigation problem sets.",
+      "image": "/assets/knust/organizers/kwame.png",
+      "initials": "KM",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "github": "https://github.com"
+      }
+    },
+    {
+      "id": "operations-lead",
+      "name": "Abena Osei",
+      "role": "Operations & Logistics Lead",
+      "department": "Mathematical & Computational Physics Unit, KNUST",
+      "bio": "Managing virtual streaming logistics on Microsoft Teams, schedule management, and participant support.",
+      "image": "/assets/knust/organizers/abena.png",
+      "initials": "AO",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      }
+    },
+    {
+      "id": "community-lead",
+      "name": "Emmanuel Addo",
+      "role": "Community & Outreach Lead",
+      "department": "Dept. of Physics, KNUST",
+      "bio": "Leading student outreach across campus, university partnerships, Discord onboarding, and team formation.",
+      "image": "/assets/knust/organizers/emmanuel.png",
+      "initials": "EA",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      }
+    },
+    {
+      "id": "design-lead",
+      "name": "Akosua Boateng",
+      "role": "Creative & Media Lead",
+      "department": "College of Science, KNUST",
+      "bio": "Overseeing event visual branding, social media assets, presentation templates, and digital media production.",
+      "image": "/assets/knust/organizers/akosua.png",
+      "initials": "AB",
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      }
+    }
+  ]
+}

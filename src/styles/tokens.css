@@ -1,0 +1,121 @@
+@import '@fontsource/ibm-plex-sans/300.css';
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+@import '@fontsource/ibm-plex-sans/700.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/ibm-plex-mono/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg-base: #0a0d14;
+  --color-bg-surface: rgba(22, 27, 34, 0.75);
+  --color-bg-surface-hover: rgba(30, 38, 48, 0.85);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-glow: rgba(138, 63, 252, 0.4);
+  --color-accent-purple: #8a3ffc;
+  --color-accent-blue: #0f62fe;
+  --color-accent-cyan: #1192e8;
+  --color-accent-pink: #ee5396;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: #f4f4f4;
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(15, 20, 30, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(138, 63, 252, 0.3);
+  box-shadow: 0 12px 40px 0 rgba(138, 63, 252, 0.15), 0 0 20px rgba(17, 146, 232, 0.1);
+}
+
+/* Section Focus & Hover Glow spotlight */
+.interactive-focus-target {
+  position: relative;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.interactive-focus-target:hover {
+  transform: translateY(-2px);
+  border-color: rgba(138, 63, 252, 0.5);
+  box-shadow: 0 0 25px rgba(138, 63, 252, 0.25), 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 20%, #be95ff 60%, #1192e8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #be95ff 0%, #8a3ffc 50%, #0f62fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #33b1ff 0%, #1192e8 50%, #0072c3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Quantum Circuit grid background pattern */
+.quantum-grid-bg {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(138, 63, 252, 0.12) 1px, transparent 0),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px, 64px 64px;
+}
+
+/* Subtle glow orb */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0d14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(138, 63, 252, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(138, 63, 252, 0.7);
+}

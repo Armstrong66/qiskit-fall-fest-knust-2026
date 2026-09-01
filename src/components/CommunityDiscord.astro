@@ -1,0 +1,86 @@
+---
+import { siteConfig } from '../site.config';
+import Button from './ui/Button.astro';
+import GlowCard from './ui/GlowCard.astro';
+---
+
+<section id="community" class="py-20 sm:py-28 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <GlowCard glowColor="purple" class="relative overflow-hidden p-8 sm:p-12">
+      
+      <!-- Background Ambient Circuit Accent -->
+      <div class="absolute -right-16 -bottom-16 w-64 h-64 opacity-20 pointer-events-none">
+        <img src="/assets/qff-global/Sticker_Qiskit-Purple.svg" alt="" class="w-full h-full object-contain" />
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        
+        <!-- Left Column: Community Copy -->
+        <div class="lg:col-span-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-brand-500/10 text-brand-300 border border-brand-500/30 mb-4">
+            <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+            Community & Collaboration
+          </div>
+
+          <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+            Join the Official KNUST Quantum Discord
+          </h3>
+
+          <p class="text-carbon-300 text-sm sm:text-base leading-relaxed max-w-2xl mb-6">
+            All announcements, hackathon team formation channels, office hours, and mentor support happen inside our dedicated Discord server.
+          </p>
+
+          <!-- Discord Gating Notification -->
+          {!siteConfig.links.discordInviteVisible ? (
+            <div class="p-4 rounded-xl bg-[#0a0d14]/80 border border-white/10 flex items-start gap-3 max-w-xl">
+              <svg class="w-5 h-5 text-brand-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <div class="text-xs sm:text-sm text-carbon-300">
+                <strong class="text-white font-semibold block mb-0.5">Invite Link Sent Upon Registration</strong>
+                To protect the community from spam bots, the direct Discord invite link is emailed immediately after you register on Luma.
+              </div>
+            </div>
+          ) : (
+            <div class="flex items-center gap-4">
+              <Button
+                href={siteConfig.links.discordInviteUrl}
+                variant="primary"
+                size="md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Join Discord Server</span>
+              </Button>
+            </div>
+          )}
+        </div>
+
+        <!-- Right Column: Registration Link CTA -->
+        <div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
+          <Button
+            href={siteConfig.links.register}
+            variant="primary"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto text-center"
+          >
+            <span>Register to Receive Invite</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </Button>
+          <span class="text-xs font-mono text-carbon-400 mt-3 text-center lg:text-right w-full sm:w-auto">
+            Takes ~30 seconds on Luma
+          </span>
+        </div>
+
+      </div>
+
+    </GlowCard>
+
+  </div>
+</section>

@@ -1,0 +1,32 @@
+{
+  "title": "A Decade of Quantum on the Cloud",
+  "tagline": "From 5 qubits in 2016 to utility-scale computation in 2026.",
+  "overview": "In May 2016, IBM connected a 5-qubit quantum processor to the cloud, allowing anyone in the world to run quantum circuits over the internet for the first time. Over the past 10 years, quantum computing has transformed from theoretical research into accessible utility-scale systems with 100+ qubits executing complex algorithms.",
+  "milestones": [
+    {
+      "year": "2016",
+      "title": "Quantum on the Cloud",
+      "summary": "IBM puts the first 5-qubit processor on the cloud via IBM Quantum Experience, democratizing quantum hardware access."
+    },
+    {
+      "year": "2017",
+      "title": "Birth of Qiskit",
+      "summary": "Launch of Qiskit SDK, establishing an open-source Python framework for quantum circuit synthesis and simulation."
+    },
+    {
+      "year": "2021",
+      "title": "Breaking 100 Qubits",
+      "summary": "Eagle processor reaches 127 qubits, pushing quantum systems beyond classical brute-force exact state simulation."
+    },
+    {
+      "year": "2023",
+      "title": "Quantum Utility Era",
+      "summary": "Demonstrations show quantum computers producing accurate results at scale beyond exact brute-force classical simulation."
+    },
+    {
+      "year": "2026",
+      "title": "10-Year Milestone",
+      "summary": "Celebrating a decade of cloud quantum computing with utility workloads, error mitigation, and next-gen quantum developers."
+    }
+  ]
+}

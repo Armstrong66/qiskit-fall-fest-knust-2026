@@ -1,0 +1,28 @@
+---
+interface Props {
+  class?: string;
+  glowColor?: 'purple' | 'cyan' | 'pink' | 'none';
+  interactive?: boolean;
+}
+
+const {
+  class: className = '',
+  glowColor = 'purple',
+  interactive = true,
+} = Astro.props;
+
+const glowVariants = {
+  purple: 'hover:border-brand-500/50 hover:shadow-[0_0_30px_rgba(138,63,252,0.2)]',
+  cyan: 'hover:border-quantum-cyan/50 hover:shadow-[0_0_30px_rgba(17,146,232,0.2)]',
+  pink: 'hover:border-quantum-magenta/50 hover:shadow-[0_0_30px_rgba(238,83,150,0.2)]',
+  none: '',
+};
+
+const interactiveClass = interactive ? `transition-all duration-300 hover:-translate-y-1 ${glowVariants[glowColor]}` : '';
+---
+
+<div class={`relative rounded-2xl bg-[#121722]/70 backdrop-blur-xl border border-white/[0.08] p-6 sm:p-8 overflow-hidden ${interactiveClass} ${className}`}>
+  {/* Subtle top inner border highlight */}
+  <div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/15 to-transparent pointer-events-none"></div>
+  <slot />
+</div>

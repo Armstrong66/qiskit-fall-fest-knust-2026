@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is Qiskit Fall Fest 2026 at KNUST?",
+    "answer": "Qiskit Fall Fest KNUST 2026 is a student-led quantum computing festival hosted by the Qiskit KNUST Student Chapter (Dept. of Physics). It brings together introductory lectures, technical labs using Qiskit, and a hands-on hackathon celebrating a decade of cloud quantum computing."
+  },
+  {
+    "question": "Who can attend and what are the prerequisites?",
+    "answer": "The event is open to all university students, high school graduates, researchers, and tech enthusiasts. Basic familiarity with Python and linear algebra is helpful, but introductory tracks will cover the quantum fundamentals from scratch."
+  },
+  {
+    "question": "Is there any registration or participation fee?",
+    "answer": "No, attendance is 100% free. All workshop materials, access to IBM Quantum cloud simulators/backends for hackathon tracks, and virtual sessions are provided at zero cost."
+  },
+  {
+    "question": "Where will the event be held?",
+    "answer": "The event is conducted virtually on Microsoft Teams so that participants across Ghana and internationally can join seamlessly. For students in Kumasi, optional local watch parties and collaborative hackathon meetups will be held on campus."
+  },
+  {
+    "question": "How do I access the Discord community?",
+    "answer": "To maintain a safe, spam-free learning environment, Discord invitations are automatically sent via email immediately after you register on our official Luma event page."
+  },
+  {
+    "question": "Will participants receive certificates of completion?",
+    "answer": "Yes, attendees who actively participate in workshop modules or submit projects to the KNUST Quantum Hackathon will receive verified digital certificates of participation from the student chapter."
+  }
+]

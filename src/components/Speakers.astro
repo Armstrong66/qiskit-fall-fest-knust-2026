@@ -1,0 +1,61 @@
+---
+import speakersData from '../data/speakers.json';
+import SectionHeading from './ui/SectionHeading.astro';
+import TbdBadge from './ui/TbdBadge.astro';
+import GlowCard from './ui/GlowCard.astro';
+---
+
+<section id="speakers" class="py-20 sm:py-28 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <SectionHeading
+      badge="Instructors & Speakers"
+      title="Mentors & Keynote Guests"
+      subtitle="Learn directly from IBM Quantum researchers, academic physicists, and Qiskit advocates."
+    />
+
+    {speakersData.isTbd ? (
+      <div class="space-y-8">
+        
+        <!-- TBD Alert Callout -->
+        <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/10 bg-[#121722]/80 text-center max-w-3xl mx-auto">
+          <div class="inline-flex mb-4">
+            <TbdBadge text="Speakers Being Announced Soon" size="md" />
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">
+            Facilitator Lineup Under Confirmation
+          </h3>
+          <p class="text-carbon-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+            {speakersData.tbdNotice}
+          </p>
+        </div>
+
+        <!-- Expected Roles Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-10">
+          {speakersData.expectedRoles.map((item, idx) => (
+            <GlowCard glowColor="cyan" class="text-center flex flex-col items-center">
+              <div class="w-14 h-14 rounded-2xl bg-quantum-cyan/10 border border-quantum-cyan/30 flex items-center justify-center text-quantum-cyan mb-4 shadow-glow-cyan">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h4 class="text-base font-bold text-white mb-2">{item.role}</h4>
+              <p class="text-xs sm:text-sm text-carbon-300 leading-relaxed">{item.focus}</p>
+            </GlowCard>
+          ))}
+        </div>
+
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {speakersData.featuredSpeakers.map((speaker: any) => (
+          <GlowCard class="text-center flex flex-col items-center">
+            {/* Populated Speaker card */}
+          </GlowCard>
+        ))}
+      </div>
+    )}
+
+  </div>
+</section>

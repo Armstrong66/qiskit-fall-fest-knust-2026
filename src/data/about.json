@@ -1,0 +1,24 @@
+{
+  "global": {
+    "title": "What is Qiskit Fall Fest?",
+    "badge": "Global Initiative",
+    "description": "Qiskit Fall Fest is a collection of student-organized, university-hosted quantum computing events supported by IBM Quantum. Across the globe, student leaders organize hackathons, technical tutorials, and workshops that introduce thousands of newcomers and researchers to quantum computing using the Qiskit SDK.",
+    "highlights": [
+      "Supported directly by IBM Quantum & Qiskit Community",
+      "Hands-on challenges running on real quantum hardware",
+      "Networking with researchers, engineers, and quantum innovators"
+    ]
+  },
+  "knustChapter": {
+    "title": "KNUST Edition",
+    "badge": "Host Chapter",
+    "department": "Mathematical & Computational Physics Unit, Dept. of Physics",
+    "institution": "Kwame Nkrumah University of Science and Technology (KNUST)",
+    "description": "Hosted by the Qiskit KNUST Student Chapter, our 2026 edition brings together students, researchers, and tech enthusiasts across Ghana and West Africa to explore the frontiers of quantum algorithms, quantum machine learning, and error mitigation.",
+    "stats": [
+      { "value": "10 Years", "label": "Cloud Quantum (2016–2026)" },
+      { "value": "100%", "label": "Free & Virtual" },
+      { "value": "5+", "label": "Hands-on Modules" }
+    ]
+  }
+}

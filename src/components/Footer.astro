@@ -1,0 +1,97 @@
+---
+import { siteConfig } from '../site.config';
+---
+
+<footer class="mt-auto border-t border-white/[0.08] bg-[#07090e] relative z-10 pt-16 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/[0.06]">
+      
+      <!-- Brand & Host Col -->
+      <div class="md:col-span-6 flex flex-col items-start">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center">
+            <img src="/assets/qff-global/badge-pink.svg" alt="Qiskit Badge" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-white font-sans">{siteConfig.event.name}</h3>
+            <p class="text-xs font-mono text-carbon-400">KNUST Student Chapter</p>
+          </div>
+        </div>
+
+        <p class="text-sm text-carbon-300 max-w-md leading-relaxed mb-6">
+          Hosted by the Mathematical & Computational Physics Unit, Department of Physics, KNUST. Empowering the next generation of quantum programmers and researchers in Ghana.
+        </p>
+
+        <!-- Powered by IBM Qiskit Brand Strip -->
+        <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-white/[0.03] border border-white/[0.08] text-xs text-carbon-300">
+          <span class="w-2 h-2 rounded-full bg-brand-400"></span>
+          <span>Powered by <strong>IBM Qiskit</strong> Global Community Initiative</span>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="md:col-span-3">
+        <h4 class="text-xs font-mono font-semibold uppercase tracking-wider text-carbon-400 mb-4">
+          Quick Links
+        </h4>
+        <ul class="space-y-2.5 text-sm">
+          {siteConfig.nav.map((item) => (
+            <li>
+              <a href={item.href} class="text-carbon-300 hover:text-white transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a href={siteConfig.links.register} target="_blank" rel="noopener noreferrer" class="text-brand-300 hover:text-brand-200 transition-colors font-medium">
+              Register on Luma →
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Resources & External -->
+      <div class="md:col-span-3">
+        <h4 class="text-xs font-mono font-semibold uppercase tracking-wider text-carbon-400 mb-4">
+          Quantum Resources
+        </h4>
+        <ul class="space-y-2.5 text-sm">
+          <li>
+            <a href={siteConfig.links.qiskitGlobal} target="_blank" rel="noopener noreferrer" class="text-carbon-300 hover:text-white transition-colors flex items-center gap-1.5">
+              <span>Qiskit.org Documentation</span>
+              <svg class="w-3 h-3 text-carbon-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href={siteConfig.links.ibmQuantum} target="_blank" rel="noopener noreferrer" class="text-carbon-300 hover:text-white transition-colors flex items-center gap-1.5">
+              <span>IBM Quantum Platform</span>
+              <svg class="w-3 h-3 text-carbon-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href={`mailto:${siteConfig.links.email}`} class="text-carbon-300 hover:text-white transition-colors">
+              Contact Organizing Team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom copyright & legal -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-carbon-400 font-mono">
+      <div>
+        © {siteConfig.event.year} Qiskit KNUST Student Chapter. Open source under MIT License.
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#top" class="hover:text-white transition-colors flex items-center gap-1">
+          <span>Back to top</span>
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>

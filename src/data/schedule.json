@@ -1,0 +1,23 @@
+{
+  "isTbd": true,
+  "tbdNotice": "The complete workshop agenda and hackathon timeline are currently being finalized with IBM Quantum facilitators. Registered attendees will receive calendar invites.",
+  "tracks": [
+    {
+      "name": "Foundations of Quantum",
+      "description": "Introduction to qubits, superposition, entanglement, and quantum logic gates."
+    },
+    {
+      "name": "Hands-on Qiskit SDK",
+      "description": "Building and executing quantum circuits, statevectors, and transpilation."
+    },
+    {
+      "name": "Decade of Quantum Applications",
+      "description": "Variational quantum algorithms (VQE, QAOA), quantum chemistry, and machine learning."
+    },
+    {
+      "name": "KNUST Quantum Hackathon",
+      "description": "Collaborative problem-solving challenge with mentorship and recognition."
+    }
+  ],
+  "days": []
+}

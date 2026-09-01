@@ -1,0 +1,19 @@
+{
+  "isTbd": true,
+  "tbdNotice": "Keynote speakers from IBM Quantum and academic researchers will be announced soon. Stay tuned!",
+  "featuredSpeakers": [],
+  "expectedRoles": [
+    {
+      "role": "IBM Quantum Researchers",
+      "focus": "Utility-scale quantum computation & algorithm design"
+    },
+    {
+      "role": "KNUST Faculty & Physicists",
+      "focus": "Mathematical and computational foundations"
+    },
+    {
+      "role": "Qiskit Advocates & Mentors",
+      "focus": "Code walkthroughs and hackathon problem troubleshooting"
+    }
+  ]
+}

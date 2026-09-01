@@ -1,0 +1,36 @@
+---
+import faqData from '../data/faq.json';
+import SectionHeading from './ui/SectionHeading.astro';
+---
+
+<section id="faq" class="py-20 sm:py-28 relative">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <SectionHeading
+      badge="Got Questions?"
+      title="Frequently Asked Questions"
+      subtitle="Everything you need to know about participating in Qiskit Fall Fest KNUST 2026."
+    />
+
+    <div class="space-y-4">
+      {faqData.map((item, idx) => (
+        <details class="interactive-focus-target group rounded-2xl bg-[#121722]/80 backdrop-blur-md border border-white/[0.08] hover:border-brand-500/40 transition-all duration-300 overflow-hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-left">
+            <span class="text-base sm:text-lg font-semibold text-white group-hover:text-brand-300 transition-colors pr-4">
+              {item.question}
+            </span>
+            <div class="w-8 h-8 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-carbon-300 group-open:rotate-180 group-open:bg-brand-500/20 group-open:text-brand-300 transition-all duration-300 shrink-0">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </div>
+          </summary>
+          <div class="px-6 pb-6 pt-2 text-sm sm:text-base text-carbon-300 leading-relaxed border-t border-white/[0.04]">
+            {item.answer}
+          </div>
+        </details>
+      ))}
+    </div>
+
+  </div>
+</section>

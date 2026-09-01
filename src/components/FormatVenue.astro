@@ -1,0 +1,84 @@
+---
+import { siteConfig } from '../site.config';
+import SectionHeading from './ui/SectionHeading.astro';
+import GlowCard from './ui/GlowCard.astro';
+---
+
+<section id="format" class="py-20 sm:py-28 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <SectionHeading
+      badge="Format & Participation"
+      title="How to Join & Participate"
+      subtitle="Designed to be fully accessible online, with local student watch parties for Kumasi-based attendees."
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+      
+      <!-- Primary Virtual Platform Card -->
+      <GlowCard glowColor="purple" class="flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-300 mb-6 shadow-glow-sm">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-brand-300">
+            Primary Format · Virtual Streaming
+          </span>
+
+          <h3 class="text-2xl font-bold text-white mt-2 mb-4">
+            Live via {siteConfig.format.platform}
+          </h3>
+
+          <p class="text-carbon-300 text-sm sm:text-base leading-relaxed mb-6">
+            All keynotes, hands-on Qiskit code walkthroughs, and hackathon project pitches will be broadcast live. Interactive Q&A channels and breakout mentoring rooms ensure every participant receives real-time guidance.
+          </p>
+        </div>
+
+        <div class="pt-6 border-t border-white/[0.08] flex items-center justify-between text-xs font-mono text-carbon-400">
+          <span>Global Access · Zero Barrier</span>
+          <span class="text-brand-300 font-bold">100% Online</span>
+        </div>
+      </GlowCard>
+
+      <!-- Kumasi Local Meetup Callout (Config-flagged) -->
+      {siteConfig.format.showLocalMeetup ? (
+        <GlowCard glowColor="cyan" class="flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-quantum-cyan/10 border border-quantum-cyan/30 flex items-center justify-center text-quantum-cyan mb-6 shadow-glow-cyan">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+
+            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-quantum-cyan">
+              Campus Gathering
+            </span>
+
+            <h3 class="text-2xl font-bold text-white mt-2 mb-4">
+              {siteConfig.format.localMeetupTitle}
+            </h3>
+
+            <p class="text-carbon-300 text-sm sm:text-base leading-relaxed mb-6">
+              {siteConfig.format.localMeetupNote}
+            </p>
+          </div>
+
+          <div class="pt-6 border-t border-white/[0.08] flex items-center justify-between text-xs font-mono text-carbon-400">
+            <span>Location: Physics Dept. Lab</span>
+            <span class="text-quantum-cyan font-bold">Kumasi, GH</span>
+          </div>
+        </GlowCard>
+      ) : null}
+
+    </div>
+
+  </div>
+</section>

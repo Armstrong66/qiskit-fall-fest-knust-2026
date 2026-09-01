@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import ThemeTimeline from '../components/ThemeTimeline.astro';
+import FormatVenue from '../components/FormatVenue.astro';
+import Schedule from '../components/Schedule.astro';
+import Speakers from '../components/Speakers.astro';
+import Team from '../components/Team.astro';
+import Gallery from '../components/Gallery.astro';
+import CommunityDiscord from '../components/CommunityDiscord.astro';
+import RegisterCta from '../components/RegisterCta.astro';
+import Faq from '../components/Faq.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <div id="top" class="min-h-screen flex flex-col">
+    <Header />
+    
+    <main class="flex-1">
+      <Hero />
+      <About />
+      <ThemeTimeline />
+      <FormatVenue />
+      <Schedule />
+      <Speakers />
+      <Team />
+      <Gallery />
+      <CommunityDiscord />
+      <RegisterCta />
+      <Faq />
+    </main>
+
+    <Footer />
+  </div>
+</BaseLayout>

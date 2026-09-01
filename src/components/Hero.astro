@@ -1,0 +1,142 @@
+---
+import { siteConfig } from '../site.config';
+import Button from './ui/Button.astro';
+import TbdBadge from './ui/TbdBadge.astro';
+---
+
+<section class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-36 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Left Column: Headline & CTA -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left z-10">
+        
+        <!-- Decade Theme Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-xs sm:text-sm font-mono text-brand-300 mb-6 backdrop-blur-md shadow-glow-sm">
+          <span class="w-2 h-2 rounded-full bg-quantum-cyan animate-pulse"></span>
+          <span>A Decade of Quantum on the Cloud (2016 → 2026)</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+          Qiskit Fall Fest <span class="text-gradient-purple">KNUST 2026</span>
+        </h1>
+
+        <!-- Subtitle / Hook -->
+        <p class="text-lg sm:text-xl text-carbon-300 mb-8 leading-relaxed max-w-2xl">
+          Join the Qiskit KNUST Student Chapter for an immersive quantum computing festival. Hands-on algorithms, Qiskit SDK workshops, and collaborative challenges running on real quantum hardware.
+        </p>
+
+        <!-- Quick Event Highlights Strip -->
+        <div class="flex flex-wrap items-center gap-3 mb-10 text-xs sm:text-sm font-mono text-carbon-300">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#161b22]/80 border border-white/10 backdrop-blur-sm">
+            <svg class="w-4 h-4 text-quantum-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>{siteConfig.format.mode === 'virtual' ? `Virtual · ${siteConfig.format.platform}` : 'Hybrid'}</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#161b22]/80 border border-white/10 backdrop-blur-sm">
+            <svg class="w-4 h-4 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            {siteConfig.dates.start ? (
+              <span>{siteConfig.dates.displayRange}</span>
+            ) : (
+              <TbdBadge text="Dates TBA" size="sm" />
+            )}
+          </div>
+
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#161b22]/80 border border-white/10 backdrop-blur-sm">
+            <svg class="w-4 h-4 text-quantum-pink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Dept. of Physics, KNUST</span>
+          </div>
+        </div>
+
+        <!-- Primary CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+          <Button
+            href={siteConfig.links.register}
+            variant="primary"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Register on Luma</span>
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </Button>
+
+          <Button
+            href="#theme"
+            variant="secondary"
+            size="lg"
+          >
+            <span>Explore Decade Theme</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </Button>
+        </div>
+
+        <!-- Sub-note for free admission -->
+        <p class="mt-4 text-xs text-carbon-400 font-mono flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-quantum-cyan" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          </svg>
+          100% Free · Open to all students, researchers & developers
+        </p>
+
+      </div>
+
+      <!-- Right Column: Visual Artwork & Floating Qubit Elements -->
+      <div class="lg:col-span-5 relative flex items-center justify-center">
+        <!-- Glow backing aura -->
+        <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-brand-500/20 blur-[90px] pointer-events-none"></div>
+
+        <!-- Central Quantum Illustration Container -->
+        <div class="relative w-full max-w-md sm:max-w-lg aspect-square flex items-center justify-center p-4">
+          <div class="relative w-full h-full rounded-3xl p-6 glass-panel border border-white/10 flex items-center justify-center group overflow-hidden">
+            
+            <!-- Quantum circuit backdrop pattern -->
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-900/30 via-transparent to-quantum-cyan/10 opacity-60"></div>
+            
+            <!-- Hero Graphic -->
+            <img 
+              src="/assets/qff-global/Hero 1 without title.svg" 
+              alt="Qiskit Fall Fest 2026 Artwork" 
+              class="relative z-10 w-full h-auto max-h-[320px] object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500"
+              onerror="this.onerror=null; this.src='/assets/qff-global/Hero 1 without title.png';"
+            />
+
+            <!-- Floating Quantum Badge Badge -->
+            <div class="absolute bottom-4 left-4 z-20 px-3.5 py-2 rounded-xl bg-[#0a0d14]/90 border border-brand-500/40 backdrop-blur-md shadow-glow-sm flex items-center gap-2.5 animate-float">
+              <span class="flex h-2.5 w-2.5 rounded-full bg-quantum-cyan"></span>
+              <div class="flex flex-col">
+                <span class="text-[11px] font-mono text-brand-300 font-bold uppercase tracking-wider">IBM Quantum</span>
+                <span class="text-[10px] text-carbon-300 font-sans">10-Year Cloud Anniversary</span>
+              </div>
+            </div>
+
+            <!-- Floating Top Right Badge -->
+            <div class="absolute top-4 right-4 z-20 px-3 py-1.5 rounded-xl bg-[#0a0d14]/90 border border-white/10 backdrop-blur-md text-[11px] font-mono text-carbon-300">
+              |00...0⟩ → |ψ_2026⟩
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

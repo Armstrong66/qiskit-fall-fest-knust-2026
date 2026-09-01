@@ -1,0 +1,58 @@
+---
+import galleryData from '../data/gallery.json';
+import { siteConfig } from '../site.config';
+import SectionHeading from './ui/SectionHeading.astro';
+---
+
+{siteConfig.features.showGallery && (
+  <section id="gallery" class="py-20 sm:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <SectionHeading
+        badge="Past Edition"
+        title={galleryData.title}
+        subtitle={galleryData.subtitle}
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        {galleryData.items.map((item, idx) => (
+          <div class="interactive-focus-target group relative rounded-2xl bg-[#121722]/80 backdrop-blur-md border border-white/[0.08] overflow-hidden hover:border-brand-500/50 transition-all duration-300">
+            
+            <!-- Image container with fixed aspect ratio -->
+            <div class="relative w-full aspect-video sm:aspect-[16/10] overflow-hidden bg-[#0a0d14]">
+              <img
+                src={item.image}
+                alt={item.caption}
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+                loading="lazy"
+              />
+              
+              <!-- Subtle gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0d14] via-[#0a0d14]/40 to-transparent"></div>
+
+              <!-- Top Year Pill -->
+              <div class="absolute top-4 left-4">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-[#0a0d14]/80 text-brand-300 border border-brand-500/30 backdrop-blur-md">
+                  {item.year}
+                </span>
+              </div>
+            </div>
+
+            <!-- Caption / Footer -->
+            <div class="p-5 sm:p-6 bg-[#121722]/90 border-t border-white/[0.06]">
+              <p class="text-sm sm:text-base font-medium text-white group-hover:text-brand-300 transition-colors">
+                {item.caption}
+              </p>
+              <div class="mt-2 flex items-center gap-2 text-xs font-mono text-carbon-400">
+                <span class="w-1.5 h-1.5 rounded-full bg-quantum-cyan"></span>
+                <span>Global Student QFF Community Archive</span>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+)}
