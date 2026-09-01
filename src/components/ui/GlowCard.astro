@@ -23,6 +23,6 @@ const interactiveClass = interactive ? `transition-all duration-300 hover:-trans
 
 <div class={`relative rounded-2xl bg-[#121722]/70 backdrop-blur-xl border border-white/[0.08] p-6 sm:p-8 overflow-hidden ${interactiveClass} ${className}`}>
   {/* Subtle top inner border highlight */}
-  <div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/15 to-transparent pointer-events-none"></div>
+  <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/15 to-transparent pointer-events-none"></div>
   <slot />
 </div>

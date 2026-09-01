@@ -19,13 +19,13 @@ import SectionHeading from './ui/SectionHeading.astro';
         <div class="interactive-focus-target group relative rounded-2xl bg-[#121722]/80 backdrop-blur-xl border border-white/[0.08] hover:border-brand-500/50 p-6 flex flex-col items-center text-center justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(138,63,252,0.22)]">
           
           <!-- Subtle Top Highlight Line -->
-          <div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-brand-400/30 to-transparent"></div>
+          <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-brand-400/30 to-transparent"></div>
 
           <!-- Top Block: Headshot + Primary Info -->
           <div class="flex flex-col items-center w-full">
             
             <!-- Headshot Container with Hardcoded Fixed Aspect Ratio & Glow -->
-            <div class="relative w-28 h-28 sm:w-32 sm:h-32 mb-5 rounded-full p-1 bg-gradient-to-br from-brand-500/40 via-quantum-cyan/30 to-brand-700/40 group-hover:from-brand-400 group-hover:to-quantum-cyan transition-all duration-300 shadow-glow-sm shrink-0">
+            <div class="relative w-28 h-28 sm:w-32 sm:h-32 mb-5 rounded-full p-1 bg-linear-to-br from-brand-500/40 via-quantum-cyan/30 to-brand-700/40 group-hover:from-brand-400 group-hover:to-quantum-cyan transition-all duration-300 shadow-glow-sm shrink-0">
               <div class="w-full h-full rounded-full overflow-hidden bg-[#161b22] flex items-center justify-center relative">
                 
                 <!-- Headshot Image -->
@@ -39,7 +39,7 @@ import SectionHeading from './ui/SectionHeading.astro';
 
                 <!-- Fallback Initials Avatar Badge (renders if image fails or before custom photo is uploaded) -->
                 <div 
-                  class="hidden w-full h-full items-center justify-center bg-gradient-to-br from-[#161b22] to-[#21262d] text-brand-300 font-mono font-bold text-xl"
+                  class="hidden w-full h-full items-center justify-center bg-linear-to-br from-[#161b22] to-[#21262d] text-brand-300 font-mono font-bold text-xl"
                   aria-hidden="true"
                 >
                   {member.initials}
