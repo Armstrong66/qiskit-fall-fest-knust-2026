@@ -9,13 +9,24 @@ import Button from './ui/Button.astro';
       
       <!-- Brand Logo / Identity -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/30 group-hover:border-brand-400 group-hover:shadow-glow-sm transition-all duration-300">
-          <img 
-            src="/assets/qff-global/badge-pink.svg" 
-            alt="Qiskit Emblem" 
-            class="w-6 h-6 transform group-hover:scale-110 transition-transform duration-300"
-          />
+        <!-- Dual Brand Lockup: Qiskit Emblem + KNUST Crest -->
+        <div class="flex items-center gap-1.5">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/30 group-hover:border-brand-400 group-hover:shadow-glow-sm transition-all duration-300 shrink-0">
+            <img 
+              src="/assets/qff-global/badge-pink.svg" 
+              alt="Qiskit Emblem" 
+              class="w-6 h-6 transform group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div class="relative flex items-center justify-center w-9 h-9 rounded-xl bg-white/[0.04] border border-white/10 p-1 shrink-0">
+            <img 
+              src="/assets/knust/knust-logo.png" 
+              alt="KNUST Crest" 
+              class="w-full h-full object-contain"
+            />
+          </div>
         </div>
+
         <div class="flex flex-col">
           <span class="text-sm sm:text-base font-bold tracking-tight text-white flex items-center gap-1.5 font-sans">
             Qiskit Fall Fest
@@ -118,7 +129,6 @@ import Button from './ui/Button.astro';
       iconClose.classList.toggle('hidden', isExpanded);
     });
 
-    // Close mobile menu on clicking any nav item
     mobileMenu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');

@@ -10,17 +10,23 @@ import { siteConfig } from '../site.config';
       <!-- Brand & Host Col -->
       <div class="md:col-span-6 flex flex-col items-start">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center">
-            <img src="/assets/qff-global/badge-pink.svg" alt="Qiskit Badge" class="w-6 h-6" />
+          <!-- Dual Crest Branding in Footer -->
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center">
+              <img src="/assets/qff-global/badge-pink.svg" alt="Qiskit Badge" class="w-6 h-6" />
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/10 p-1.5 flex items-center justify-center">
+              <img src="/assets/knust/knust-logo.png" alt="KNUST Crest" class="w-full h-full object-contain" />
+            </div>
           </div>
           <div>
             <h3 class="text-base font-bold text-white font-sans">{siteConfig.event.name}</h3>
-            <p class="text-xs font-mono text-carbon-400">KNUST Student Chapter</p>
+            <p class="text-xs font-mono text-carbon-400">KNUST Student Chapter · Dept. of Physics</p>
           </div>
         </div>
 
         <p class="text-sm text-carbon-300 max-w-md leading-relaxed mb-6">
-          Hosted by the Mathematical & Computational Physics Unit, Department of Physics, KNUST. Empowering the next generation of quantum programmers and researchers in Ghana.
+          Hosted by the Mathematical & Computational Physics Unit, Department of Physics, Kwame Nkrumah University of Science and Technology (KNUST). Empowering the next generation of quantum programmers and researchers in Ghana and across Africa.
         </p>
 
         <!-- Powered by IBM Qiskit Brand Strip -->

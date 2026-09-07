@@ -1,0 +1,30 @@
+{
+  "title": "KNUST 2025 Edition Highlights",
+  "subtitle": "Moments from our previous Qiskit Fall Fest KNUST edition — featuring keynote talks with IBM Quantum guest speakers, local researcher presentations, and live quantum circuit coding labs.",
+  "items": [
+    {
+      "image": "/assets/gallery/knust-2025-ibm-speaker.png",
+      "caption": "Keynote & Q&A Session with an IBM Quantum Guest Speaker",
+      "year": "KNUST 2025 Edition",
+      "tag": "IBM Quantum Keynote"
+    },
+    {
+      "image": "/assets/gallery/knust-2025-researcher-lecture.png",
+      "caption": "Interactive Presentation & Lecture with a Local Community Quantum Researcher and Educator",
+      "year": "KNUST 2025 Edition",
+      "tag": "Guest Lecture"
+    },
+    {
+      "image": "/assets/gallery/knust-2025-quantum-circuit.png",
+      "caption": "Live Coding Demo: Superdense Coding & Quantum Teleportation Circuits in Qiskit",
+      "year": "KNUST 2025 Edition",
+      "tag": "Live Circuit Demo"
+    },
+    {
+      "image": "/assets/gallery/knust-2025-coin-flipping.png",
+      "caption": "Hands-on Workshop: Demonstrating Quantum Coin Flipping and State Superposition Live",
+      "year": "KNUST 2025 Edition",
+      "tag": "Interactive Lab"
+    }
+  ]
+}

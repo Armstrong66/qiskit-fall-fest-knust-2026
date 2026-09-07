@@ -1,85 +1,43 @@
-# Qiskit Fall Fest KNUST 2026 — Official Website
+# Qiskit Fall Fest 2026 — KNUST
 
-Static, zero-recurring-cost website for **Qiskit Fall Fest 2026 (KNUST Edition)**, hosted by the Qiskit KNUST Student Chapter under the Mathematical & Computational Physics Unit, Department of Physics, KNUST.
+Welcome to the official repository for **Qiskit Fall Fest 2026 (KNUST Edition)**, hosted by the Qiskit KNUST Student Chapter under the Mathematical & Computational Physics Unit, Department of Physics, Kwame Nkrumah University of Science and Technology (KNUST).
 
-Built with **Astro + Tailwind CSS** and designed for deployment on **Vercel's free Hobby tier**.
-
----
-
-## ⚡ Non-Coder Content Update Guide
-
-All website text, links, schedule entries, speakers, and team members live in plain data files. You can edit them directly in your web browser on GitHub without installing any development tools or writing code:
-
-### 1. Update Links, Dates, Venue, & Feature Flags
-Edit **[`src/site.config.ts`](./src/site.config.ts)**:
-- `links.register`: Update your Luma registration link (e.g. `"https://lu.ma/your-real-slug"`).
-- `dates.start` / `dates.end`: Set ISO strings once confirmed (e.g. `"2026-10-20"`), or leave as `null` to automatically render the stylish `Dates TBA` badge.
-- `format.platform`: Change streaming platform label if not Microsoft Teams (e.g. `"Google Meet"` or `"Zoom"`).
-- `format.showLocalMeetup`: Toggle Kumasi on-campus watch party note (`true` or `false`).
-- `links.discordInviteVisible`: Toggle Discord link visibility (`true` to show link publicly, `false` to display copy that invite is sent after registration).
-- `features.showGallery`: Toggle last year's event gallery section (`true` or `false`).
-
-### 2. Update Organizing Team & Headshots (5 Organizers)
-Edit **[`src/content/team.json`](./src/content/team.json)**:
-- Update organizer names, titles/roles, departments, bios, and social links.
-- Place custom organizer headshots inside `public/assets/knust/organizers/` and update the `"image"` path.
-- The section contains disciplined dimensional scaling to ensure perfect alignment with zero visual overflow.
-
-### 3. Update Schedule / Agenda
-Edit **[`src/content/schedule.json`](./src/content/schedule.json)**:
-- Set `"isTbd": false` when your agenda is locked and fill in `"days"`.
-- When `"isTbd": true`, the site renders an intentional "Schedule Finalization In Progress" card with curriculum track previews.
-
-### 4. Update Keynote Speakers & Facilitators
-Edit **[`src/content/speakers.json`](./src/content/speakers.json)**:
-- Set `"isTbd": false` when speakers are confirmed and list them under `"featuredSpeakers"`.
-
-### 5. Update FAQs
-Edit **[`src/content/faq.json`](./src/content/faq.json)** to add, remove, or modify questions and answers.
-
-### 6. Update Past Event Photos / Gallery
-Edit **[`src/content/gallery.json`](./src/content/gallery.json)** and add image files into `public/assets/gallery/`.
+This repository serves as the central hub for the event website, hands-on workshop notebooks, session slide decks, and hackathon materials.
 
 ---
 
-## 🛠️ Local Development & Build
+## 📂 Repository Structure
 
-### Prerequisites
-- Node.js 18+ (tested on Node v24)
-- npm 9+
-
-### Commands
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Start local development server
-npm run dev
-
-# 3. Build static output for deployment
-npm run build
-
-# 4. Preview the static production build locally
-npm run preview
-```
+- 🌐 **[`/web`](./web)** — The official event website source code (Astro + Tailwind CSS, deployed on Vercel).
+- 📚 **[`/workshops`](./workshops)** — Workshop slide decks (PDF), interactive Jupyter notebooks (`.ipynb`), and setup instructions.
+- 🏆 **[`/hackathon`](./hackathon)** — Problem statements, starter code, and project submission guidelines.
+- 📄 **[`/docs`](./docs)** — Code of conduct, contribution guidelines, and event logistics.
 
 ---
 
-## 🚀 Deployment to Vercel ($0 Forever)
+## 🎓 For Participants & Students
 
-1. Push this repository to GitHub.
-2. Go to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-3. Import this repository.
-4. Framework Preset: **Astro** (auto-detected).
-5. Build Command: `astro build` (default).
-6. Output Directory: `dist` (default).
-7. Click **Deploy**.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/qiskit-fall-fest-knust/qiskit-fall-fest-knust-2026.git
+   cd qiskit-fall-fest-knust-2026
+   ```
 
-Every commit to `main` will automatically build and deploy the updated static site in seconds.
+2. **Access Workshop Materials:**
+   Navigate into the desired session inside [`/workshops`](./workshops) (e.g. `workshops/01-intro-to-qiskit/`) to access slides, prerequisites, and code notebooks.
+
+3. **Hackathon Track:**
+   Check [`/hackathon`](./hackathon) for challenge descriptions, evaluation criteria, and submission templates.
 
 ---
 
-## 📄 License & Attribution
+## 🛠️ For Organizers & Website Contributors
 
-- Source code licensed under the [MIT License](./LICENSE).
+Website development, editing, and deployment guides are available in **[`web/README.md`](./web/README.md)**.
+
+---
+
+## 📜 License & Acknowledgments
+
+- Source code and educational materials are licensed under the [MIT License](./LICENSE).
 - **Powered by IBM Qiskit**: Qiskit and IBM brand marks and assets are property of IBM and used in accordance with IBM Quantum Community guidelines.

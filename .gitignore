@@ -1,9 +1,14 @@
-# Build outputs
+# Website (Astro / Node)
+web/node_modules/
+web/dist/
+web/.astro/
+web/.vercel/
+
+# Dependencies & Build artifacts
+node_modules/
 dist/
 .astro/
-
-# Dependencies
-node_modules/
+.vercel/
 package-lock.json.backup
 
 # Environment variables
@@ -12,24 +17,21 @@ package-lock.json.backup
 .env.local
 .env.*.local
 
-# Operating System Files
+# Notebooks & Python (workshops, hackathon)
+**/.ipynb_checkpoints/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Internal Handoff & Planning Documentation (Untracked for public repo)
+QFF-KNUST-2026-Website-Handoff.md
+QFF-KNUST-2026-Repo-Restructure.md
+QFF-KNUST-2026-Repo-Restructure*
+
+# Operating System Files & IDEs
 .DS_Store
 Thumbs.db
-
-# IDE & Editor files
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Vercel
-.vercel
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+*.log

@@ -53,10 +53,7 @@ import TbdBadge from './ui/TbdBadge.astro';
           </div>
 
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#161b22]/80 border border-white/10 backdrop-blur-sm">
-            <svg class="w-4 h-4 text-quantum-pink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
+            <img src="/assets/knust/knust-logo.png" alt="KNUST" class="w-4 h-4 object-contain" />
             <span>Dept. of Physics, KNUST</span>
           </div>
         </div>
@@ -118,7 +115,7 @@ import TbdBadge from './ui/TbdBadge.astro';
               onerror="this.onerror=null; this.src='/assets/qff-global/Hero 1 without title.png';"
             />
 
-            <!-- Floating Quantum Badge Badge -->
+            <!-- Floating Quantum Badge -->
             <div class="absolute bottom-4 left-4 z-20 px-3.5 py-2 rounded-xl bg-[#0a0d14]/90 border border-brand-500/40 backdrop-blur-md shadow-glow-sm flex items-center gap-2.5 animate-float">
               <span class="flex h-2.5 w-2.5 rounded-full bg-quantum-cyan"></span>
               <div class="flex flex-col">
@@ -127,9 +124,10 @@ import TbdBadge from './ui/TbdBadge.astro';
               </div>
             </div>
 
-            <!-- Floating Top Right Badge -->
-            <div class="absolute top-4 right-4 z-20 px-3 py-1.5 rounded-xl bg-[#0a0d14]/90 border border-white/10 backdrop-blur-md text-[11px] font-mono text-carbon-300">
-              |00...0⟩ → |ψ_2026⟩
+            <!-- Floating Top Right Badge with KNUST Crest -->
+            <div class="absolute top-4 right-4 z-20 px-3 py-1.5 rounded-xl bg-[#0a0d14]/90 border border-white/10 backdrop-blur-md flex items-center gap-2 text-[11px] font-mono text-carbon-300">
+              <img src="/assets/knust/knust-logo.png" alt="KNUST" class="w-3.5 h-3.5 object-contain" />
+              <span>|ψ_KNUST⟩</span>
             </div>
 
           </div>
