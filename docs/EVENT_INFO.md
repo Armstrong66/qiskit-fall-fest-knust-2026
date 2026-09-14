@@ -2,6 +2,7 @@
 
 - **Event:** Qiskit Fall Fest 2026 (KNUST Edition)
 - **2026 Global Theme:** *A Decade of Quantum on the Cloud* (2016 → 2026)
+- **Dates:** November 02, 2026 – November 06, 2026
 - **Host:** Qiskit KNUST Student Chapter
 - **Academic Unit:** Mathematical & Computational Physics Unit, Department of Physics, KNUST
 - **Location:** Kumasi, Ghana (Virtual on Microsoft Teams + Local Campus Meetup)

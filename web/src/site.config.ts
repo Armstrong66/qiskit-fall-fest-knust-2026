@@ -11,10 +11,10 @@ export const siteConfig = {
     location: "Kumasi, Ghana",
   },
   dates: {
-    start: null, // Set ISO date string e.g. "2026-10-15" once locked, else null renders TBD badge
-    end: null,   // e.g. "2026-10-25"
-    registrationDeadline: null,
-    displayRange: "October / November 2026 (Dates TBA)",
+    start: "2026-11-02",
+    end: "2026-11-06",
+    registrationDeadline: "2026-11-01",
+    displayRange: "November 02, 2026 – November 06, 2026",
   },
   format: {
     mode: "virtual" as const, // "virtual" | "hybrid" | "in-person"
