@@ -57,19 +57,21 @@ import SectionHeading from './ui/SectionHeading.astro';
             </h3>
 
             <!-- Role Badge / Title -->
-            <div class="min-h-[38px] flex items-center justify-center">
+            <div class="min-h-[44px] flex items-center justify-center">
               <span class="text-xs font-mono font-semibold text-quantum-cyan leading-snug">
                 {member.role}
               </span>
             </div>
 
             <!-- Department / Unit -->
-            <p class="text-[11px] text-carbon-400 font-sans mt-2 mb-3 line-clamp-2 leading-relaxed">
-              {member.department}
-            </p>
+            <div class="min-h-[36px] flex items-center justify-center mt-1 mb-2">
+              <p class="text-[11px] text-carbon-400 font-sans line-clamp-2 leading-tight">
+                {member.department}
+              </p>
+            </div>
 
             <!-- Bio snippet -->
-            <p class="text-xs text-carbon-300 leading-relaxed font-normal line-clamp-3 mb-4">
+            <p class="text-xs text-carbon-300 leading-relaxed font-normal line-clamp-3 mb-4 min-h-[54px] flex items-center justify-center">
               {member.bio}
             </p>
 

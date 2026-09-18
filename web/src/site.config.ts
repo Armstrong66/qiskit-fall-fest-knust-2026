@@ -24,7 +24,7 @@ export const siteConfig = {
     localMeetupNote: "Informal campus watch parties and lab hackathons at KNUST Physics Unit for Kumasi-based participants.",
   },
   links: {
-    register: "https://lu.ma/qff-knust-2026", // Luma event registration URL
+    register: "https://luma.com/b5udyp52", // Luma event registration URL
     discordInviteVisible: false, // If false, displays copy explaining invite is sent post-registration
     discordInviteUrl: "https://discord.gg/example-knust-qiskit", // Activated only if discordInviteVisible is true
     email: "qiskit.knust@gmail.com",

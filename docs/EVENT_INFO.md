@@ -6,5 +6,5 @@
 - **Host:** Qiskit KNUST Student Chapter
 - **Academic Unit:** Mathematical & Computational Physics Unit, Department of Physics, KNUST
 - **Location:** Kumasi, Ghana (Virtual on Microsoft Teams + Local Campus Meetup)
-- **Registration:** Free via Luma (`https://lu.ma/qff-knust-2026`)
+- **Registration:** Free via Luma (`https://luma.com/b5udyp52`)
 - **Discord:** Gated invite sent to registered attendee email addresses.

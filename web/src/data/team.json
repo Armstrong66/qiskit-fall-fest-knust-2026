@@ -3,69 +3,63 @@
   "sectionSubtitle": "The student leaders and quantum researchers bringing Qiskit Fall Fest 2026 to KNUST.",
   "organizers": [
     {
-      "id": "armstrong",
-      "name": "Armstrong",
-      "role": "Lead Organizer & Qiskit Advocate",
-      "department": "Mathematical & Computational Physics Unit, Dept. of Physics, KNUST",
-      "bio": "Leading the Qiskit KNUST chapter and coordinating the 2026 Fall Fest curriculum, hackathons, and IBM Quantum relations.",
-      "image": "/assets/knust/organizers/armstrong.png",
-      "initials": "AM",
+      "id": "prince-smith",
+      "name": "Prince Smith",
+      "role": "Chapter Lead",
+      "department": "Department of Physics, KNUST",
+      "bio": "Directing the Qiskit KNUST chapter strategy, coordinating academic partnerships, and steering the 2026 Fall Fest festival vision.",
+      "image": "/assets/knust/organizers/prince_sheadshot.jpg",
+      "initials": "PS",
       "socials": {
-        "linkedin": "https://linkedin.com",
-        "twitter": "https://x.com",
-        "github": "https://github.com"
+        "linkedin": "https://www.linkedin.com/in/prince-smith-9bb017228/"
       }
     },
     {
-      "id": "technical-lead",
-      "name": "Kwame Mensah",
+      "id": "joseph-derrick",
+      "name": "Joseph Derrick",
       "role": "Technical & Workshops Lead",
-      "department": "Dept. of Physics / Computer Science, KNUST",
-      "bio": "Designing interactive quantum circuit labs, algorithm walkthroughs, and error mitigation problem sets.",
-      "image": "/assets/knust/organizers/kwame.png",
-      "initials": "KM",
+      "department": "Graduate Student, Dept. of Computer Engineering, KNUST",
+      "bio": "Curating technical workshop curricula, interactive Qiskit lab environments, and hackathon project judging criteria.",
+      "image": "/assets/knust/organizers/joseph_sheadshot.jpg",
+      "initials": "JD",
       "socials": {
-        "linkedin": "https://linkedin.com",
-        "github": "https://github.com"
+        "linkedin": "https://www.linkedin.com/in/joseph-derrick-anane-nti"
       }
     },
     {
-      "id": "operations-lead",
-      "name": "Abena Osei",
-      "role": "Operations & Logistics Lead",
-      "department": "Mathematical & Computational Physics Unit, KNUST",
-      "bio": "Managing virtual streaming logistics on Microsoft Teams, schedule management, and participant support.",
-      "image": "/assets/knust/organizers/abena.png",
-      "initials": "AO",
+      "id": "henry-elorm",
+      "name": "Henry Elorm, PhD",
+      "role": "Partnerships & Outreach Lead",
+      "department": "Lecturer, Department of Physics, KNUST",
+      "bio": "Facilitating faculty mentorship, institutional backing, IBM Quantum alignment, and regional quantum research integration.",
+      "image": "/assets/knust/organizers/henry_sheadshot.jpg",
+      "initials": "HE",
       "socials": {
-        "linkedin": "https://linkedin.com",
-        "twitter": "https://x.com"
+        "linkedin": "https://www.linkedin.com/in/henry-quarshie-853959b0/"
       }
     },
     {
-      "id": "community-lead",
-      "name": "Emmanuel Addo",
-      "role": "Community & Outreach Lead",
-      "department": "Dept. of Physics, KNUST",
-      "bio": "Leading student outreach across campus, university partnerships, Discord onboarding, and team formation.",
-      "image": "/assets/knust/organizers/emmanuel.png",
-      "initials": "EA",
+      "id": "gideon-adjei",
+      "name": "Gideon Adjei",
+      "role": "Design & Communications Lead",
+      "department": "Department of Computer Engineering, KNUST",
+      "bio": "Crafting visual identity systems, digital experience design, public developer communications, and creative media strategy.",
+      "image": "/assets/knust/organizers/gideon_sheadshot.jpg",
+      "initials": "GA",
       "socials": {
-        "linkedin": "https://linkedin.com",
-        "twitter": "https://x.com"
+        "linkedin": "https://www.linkedin.com/in/gideonadjei/"
       }
     },
     {
-      "id": "design-lead",
-      "name": "Akosua Boateng",
-      "role": "Creative & Media Lead",
-      "department": "College of Science, KNUST",
-      "bio": "Overseeing event visual branding, social media assets, presentation templates, and digital media production.",
-      "image": "/assets/knust/organizers/akosua.png",
-      "initials": "AB",
+      "id": "haruna-mubarack",
+      "name": "Haruna Mubarack",
+      "role": "Logistics & Community Lead",
+      "department": "Department of Physics, KNUST",
+      "bio": "Orchestrating live event streaming, attendee onboarding, community discussions, and local campus watch party coordination.",
+      "image": "/assets/knust/organizers/haruna_sheadshot.jpg",
+      "initials": "HM",
       "socials": {
-        "linkedin": "https://linkedin.com",
-        "twitter": "https://x.com"
+        "linkedin": "https://www.linkedin.com/in/haruna-mubarack-947973218/"
       }
     }
   ]
