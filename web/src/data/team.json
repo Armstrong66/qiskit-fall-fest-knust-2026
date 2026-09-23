@@ -19,11 +19,12 @@
       "name": "Joseph Derrick",
       "role": "Technical & Workshops Lead",
       "department": "Graduate Student, Dept. of Computer Engineering, KNUST",
-      "bio": "Curating technical workshop curricula, interactive Qiskit lab environments, and hackathon project judging criteria.",
+      "bio": "Facilitating hands-on technical workshop sessions and guiding students through IBM Quantum and Qiskit learning activities.",
       "image": "/assets/knust/organizers/joseph_sheadshot.jpg",
       "initials": "JD",
       "socials": {
-        "linkedin": "https://www.linkedin.com/in/joseph-derrick-anane-nti"
+        "linkedin": "https://www.linkedin.com/in/joseph-derrick-anane-nti",
+        "github": "https://github.com/Armstrong66"
       }
     },
     {
@@ -47,7 +48,8 @@
       "image": "/assets/knust/organizers/gideon_sheadshot.jpg",
       "initials": "GA",
       "socials": {
-        "linkedin": "https://www.linkedin.com/in/gideonadjei/"
+        "linkedin": "https://www.linkedin.com/in/gideonadjei/",
+        "github": "https://github.com/k-ojo"
       }
     },
     {

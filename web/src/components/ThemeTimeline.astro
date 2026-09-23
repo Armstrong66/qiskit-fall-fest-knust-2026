@@ -8,7 +8,6 @@ import GlowCard from './ui/GlowCard.astro';
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <SectionHeading
-      badge="2026 Global Theme"
       title={themeData.title}
       subtitle={themeData.tagline}
     />
@@ -18,9 +17,8 @@ import GlowCard from './ui/GlowCard.astro';
       <GlowCard glowColor="purple" class="relative">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-8">
-            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 flex items-center gap-2">
-              <span>The Journey to Quantum Utility</span>
-              <span class="px-2.5 py-0.5 rounded text-xs font-mono font-semibold bg-brand-500/20 text-brand-300 border border-brand-500/30">2016 — 2026</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">
+              The Journey to Quantum Utility
             </h3>
             <p class="text-carbon-300 text-sm sm:text-base leading-relaxed">
               {themeData.overview}
@@ -68,12 +66,6 @@ import GlowCard from './ui/GlowCard.astro';
               <p class="text-xs sm:text-sm text-carbon-300 leading-relaxed">
                 {milestone.summary}
               </p>
-            </div>
-
-            <!-- Bottom decorative node -->
-            <div class="mt-4 pt-3 border-t border-white/[0.05] flex items-center justify-between text-[11px] font-mono text-carbon-400">
-              <span>Cloud Era</span>
-              <span class="w-1.5 h-1.5 rounded-full bg-quantum-cyan group-hover:shadow-glow-cyan transition-all"></span>
             </div>
 
           </div>
