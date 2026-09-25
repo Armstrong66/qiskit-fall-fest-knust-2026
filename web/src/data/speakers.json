@@ -10,6 +10,10 @@
     {
       "role": "KNUST Faculty & Physicists",
       "focus": "Mathematical and computational foundations"
+    },
+    {
+      "role": "Mentors",
+      "focus": "Hands-on guidance, code walkthroughs, and hackathon troubleshooting"
     }
   ]
 }
