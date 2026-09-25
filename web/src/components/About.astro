@@ -17,10 +17,7 @@ import GlowCard from './ui/GlowCard.astro';
       <!-- Card 1: Global Initiative -->
       <GlowCard glowColor="purple" class="flex flex-col justify-between">
         <div>
-          <div class="flex items-center justify-between mb-6">
-            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-brand-500/10 text-brand-300 border border-brand-500/30">
-              {aboutData.global.badge}
-            </span>
+          <div class="flex items-center justify-end mb-6">
             <img src="/assets/qff-global/badge-pink.svg" alt="Qiskit Global" class="w-7 h-7" />
           </div>
 
@@ -51,10 +48,7 @@ import GlowCard from './ui/GlowCard.astro';
       <!-- Card 2: KNUST Chapter & Physics Unit -->
       <GlowCard glowColor="cyan" class="flex flex-col justify-between">
         <div>
-          <div class="flex items-center justify-between mb-6">
-            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-quantum-cyan/10 text-quantum-cyan border border-quantum-cyan/30">
-              {aboutData.knustChapter.badge}
-            </span>
+          <div class="flex items-center justify-end mb-6">
             <div class="w-9 h-9 rounded-xl bg-white/[0.05] border border-white/10 p-1 flex items-center justify-center">
               <img src="/assets/knust/knust-logo.png" alt="KNUST Logo" class="w-full h-full object-contain" />
             </div>

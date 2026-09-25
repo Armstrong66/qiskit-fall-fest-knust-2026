@@ -4,16 +4,12 @@
   "featuredSpeakers": [],
   "expectedRoles": [
     {
-      "role": "IBM Quantum Researchers",
+      "role": "IBM Quantum Researcher",
       "focus": "Utility-scale quantum computation & algorithm design"
     },
     {
       "role": "KNUST Faculty & Physicists",
       "focus": "Mathematical and computational foundations"
-    },
-    {
-      "role": "Qiskit Advocates & Mentors",
-      "focus": "Code walkthroughs and hackathon problem troubleshooting"
     }
   ]
 }

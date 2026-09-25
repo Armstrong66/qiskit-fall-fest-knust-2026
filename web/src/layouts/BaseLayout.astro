@@ -9,7 +9,7 @@ interface Props {
 }
 
 const {
-  title = `${siteConfig.event.name} — ${siteConfig.event.theme}`,
+  title = siteConfig.event.name,
   description = siteConfig.event.description,
   image = "/assets/qff-global/Hero 1 without title.png",
 } = Astro.props;
