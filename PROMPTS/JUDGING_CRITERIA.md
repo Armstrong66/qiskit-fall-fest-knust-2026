@@ -1,8 +1,8 @@
 # 🏆 Judging Criteria
 
-The Qiskit Fall Fest Nairobi 2026 Hackathon is an **individual, submission-based challenge**.
+The **Qiskit Fall Fest KNUST 2026 Hackathon** is a submission-based challenge open to individuals and teams of 1 to 4 participants.
 
-There will be **no presentations or live demos**. Submissions will be evaluated based on the criteria below.
+There will be **no live presentations or demos required**. Submissions will be evaluated directly through repository code and documentation based on the criteria below.
 
 ## Scoring
 
@@ -184,3 +184,11 @@ The use of AI tools is permitted and encouraged. Participants should be judged o
 **Final Score = Base Score (100) + Stretch Bonus (up to 10)**
 
 **Maximum possible score: 110 points**
+
+---
+
+## 🙏 Attribution & Acknowledgments
+
+This judging framework and evaluation rubric were adapted with appreciation from **[QuantumKE](https://github.com/QuantumKE)** (Qiskit Fall Fest Nairobi 2026).
+- **Challenge Prompts 01–08**: Created by QuantumKE.
+- **Challenge Prompts 09–10**: Authored by the Qiskit KNUST Student Chapter technical team.

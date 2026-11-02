@@ -1,6 +1,6 @@
 # 🤖 AI Usage Policy
 
-AI tools are **allowed and encouraged** during the Qiskit Fall Fest Nairobi 2026 Hackathon.
+AI tools are **allowed and encouraged** during the Qiskit Fall Fest KNUST 2026 Hackathon.
 
 The hackathon is designed to help participants learn quantum computing, and AI can be a valuable learning and development tool.
 
@@ -135,3 +135,9 @@ Verify it.
 Learn from it.
 
 Most importantly, **understand what you submit.** ⚛️
+
+---
+
+## 🙏 Attribution
+
+This AI Usage Policy is adapted with appreciation from **[QuantumKE](https://github.com/QuantumKE)** (Qiskit Fall Fest Nairobi 2026).
