@@ -6,5 +6,6 @@
 - **Host:** Qiskit KNUST Student Chapter
 - **Academic Unit:** Mathematical & Computational Physics Unit, Department of Physics, KNUST
 - **Location:** Kumasi, Ghana (Virtual on Microsoft Teams + Local Campus Meetup)
+- **Meeting Link:** [Microsoft Teams Meeting](https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA) (`https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA`)
 - **Registration:** Free via Luma (`https://luma.com/b5udyp52`)
 - **Discord:** Gated invite sent to registered attendee email addresses.

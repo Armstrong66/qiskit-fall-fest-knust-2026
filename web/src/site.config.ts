@@ -19,12 +19,14 @@ export const siteConfig = {
   format: {
     mode: "virtual" as const, // "virtual" | "hybrid" | "in-person"
     platform: "Microsoft Teams", // Configurable streaming platform
+    meetingUrl: "https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA", // Direct Teams meeting URL
     showLocalMeetup: true, // Toggles local watch-party callout for Kumasi students
     localMeetupTitle: "Kumasi In-Person Watch Party",
     localMeetupNote: "Informal campus watch parties and lab hackathons at KNUST Physics Unit for Kumasi-based participants.",
   },
   links: {
     register: "https://luma.com/b5udyp52", // Luma event registration URL
+    meeting: "https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA", // Microsoft Teams meeting URL
     discordInviteVisible: false, // If false, displays copy explaining invite is sent post-registration
     discordInviteUrl: "https://discord.gg/example-knust-qiskit", // Activated only if discordInviteVisible is true
     email: "qiskit.knust@gmail.com",

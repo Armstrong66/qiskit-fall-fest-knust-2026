@@ -2,6 +2,7 @@
 import { siteConfig } from '../site.config';
 import SectionHeading from './ui/SectionHeading.astro';
 import GlowCard from './ui/GlowCard.astro';
+import Button from './ui/Button.astro';
 ---
 
 <section id="format" class="py-20 sm:py-28 relative">
@@ -32,6 +33,24 @@ import GlowCard from './ui/GlowCard.astro';
           <p class="text-carbon-300 text-sm sm:text-base leading-relaxed mb-6">
             All keynotes, hands-on Qiskit code walkthroughs, and hackathon project pitches will be broadcast live. Interactive Q&A channels and breakout mentoring rooms ensure every participant receives real-time guidance.
           </p>
+        </div>
+
+        <div class="pt-6 border-t border-white/10">
+          <Button
+            href={siteConfig.links.meeting}
+            variant="primary"
+            size="md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2"
+          >
+            <span>Join Teams Meeting</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </Button>
         </div>
       </GlowCard>
 

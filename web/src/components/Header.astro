@@ -53,6 +53,15 @@ import Button from './ui/Button.astro';
       <!-- Action Buttons -->
       <div class="hidden sm:flex items-center gap-3">
         <Button
+          href={siteConfig.links.meeting}
+          variant="secondary"
+          size="sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Join Meeting</span>
+        </Button>
+        <Button
           href={siteConfig.links.register}
           variant="primary"
           size="sm"
@@ -97,7 +106,17 @@ import Button from './ui/Button.astro';
           </a>
         ))}
       </nav>
-      <div class="pt-2 border-t border-white/10">
+      <div class="pt-2 border-t border-white/10 flex flex-col gap-2">
+        <Button
+          href={siteConfig.links.meeting}
+          variant="secondary"
+          size="md"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full"
+        >
+          <span>Join Teams Meeting</span>
+        </Button>
         <Button
           href={siteConfig.links.register}
           variant="primary"
