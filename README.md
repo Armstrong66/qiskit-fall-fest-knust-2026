@@ -53,6 +53,17 @@ Daily sessions run from **15:00 to 17:00 GMT** following a consistent operating 
 
 ---
 
+## 🔬 Interactive Workshop Notebooks
+
+- **[Intro to Quantum Chemistry with VQE (`intro_to_quantum_chemistry_vqe.ipynb`)](./workshops/02-quantum-circuits-algorithms/notebooks/intro_to_quantum_chemistry_vqe.ipynb)**:
+  - Complete ground-state simulation of molecular hydrogen ($H_2$) using Qiskit and SciPy COBYLA.
+  - Molecular orbital reduction, Hamiltonian Pauli decomposition, and hardware-efficient parameterized ansatz.
+  - Dual-panel convergence trajectory and chemical accuracy ($1.6\text{ mHa}$) evaluation.
+  - Potential Energy Surface (PES) dissociation curve mapping with equilibrium bond detection ($R \approx 0.74\text{ \AA}$).
+  - Fully compatible with Google Colab (one-click badge included) and VS Code Jupyter.
+
+---
+
 ## 🏆 Hackathon & Challenge Prompts
 
 The **KNUST Quantum Hackathon** runs concurrently throughout the week. Participants may work individually or in teams of up to 4 members:
@@ -72,6 +83,9 @@ The **KNUST Quantum Hackathon** runs concurrently throughout the week. Participa
 │   ├── JUDGING_CRITERIA.md  # Official scoring rubrics
 │   ├── AI_POLICY.md         # Responsible AI usage guidelines
 │   └── README.md            # Challenge index and attribution
+├── workshops/               # Workshop session slides and interactive Jupyter notebooks
+│   ├── 02-quantum-circuits-algorithms/notebooks/ # Hands-on VQE chemistry lab
+│   └── README.md            # Workshop curriculum and lab guide
 ├── resources/               # Participant slides and presentation decks
 │   ├── presentations/       # Slide decks (e.g. A Decade in the Cloud)
 │   └── README.md            # Resources directory index

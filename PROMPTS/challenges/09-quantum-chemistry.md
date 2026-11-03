@@ -14,16 +14,20 @@ fermionic Hamiltonian to qubits using the Jordan--Wigner mapping. 4.
 Uses VQE (Variational Quantum Eigensolver) to estimate the ground-state
 energy. 5. Compares the VQE result with exact diagonalization.
 
+## Starter Lab Notebook
+
+We have provided a fully interactive Jupyter notebook covering the complete workflow, including Pauli decompositions, hardware-efficient ansatz construction, COBYLA optimization trajectories, and dissociation curve plotting:
+- **Notebook File:** [`workshops/02-quantum-circuits-algorithms/notebooks/intro_to_quantum_chemistry_vqe.ipynb`](../../workshops/02-quantum-circuits-algorithms/notebooks/intro_to_quantum_chemistry_vqe.ipynb) (or [`workshops/intro_to_quantum_chemistry_vqe.ipynb`](../../workshops/intro_to_quantum_chemistry_vqe.ipynb))
+- Compatible with Google Colab and VS Code Jupyter.
+
 ## Tools
 
 -   Python 3.10+
--   Qiskit
--   Qiskit Nature
--   PySCF
--   NumPy and SciPy
+-   Qiskit (v1.x or v2.x)
+-   SciPy and NumPy
+-   Matplotlib
 
-Install the packages in a virtual environment. Check the current Qiskit
-Nature and PySCF installation instructions if package versions conflict.
+Install the packages in a virtual environment following [`qiskit_setup_guide_for_vs_code_jupyter.md`](../../qiskit_setup_guide_for_vs_code_jupyter.md).
 
 ## Core concepts
 
@@ -37,7 +41,7 @@ Nature and PySCF installation instructions if package versions conflict.
 ## Tasks
 
 -   [ ] Generate the H₂ Hamiltonian at a bond distance of 0.735 Å.
--   [ ] Map the Hamiltonian to qubits with Jordan--Wigner.
+-   [ ] Map the Hamiltonian to qubits with Jordan--Wigner or Parity reduction.
 -   [ ] Run VQE with a suitable ansatz and classical optimizer.
 -   [ ] Compute the exact ground-state energy for comparison.
 -   [ ] Report both energies and their absolute difference.
@@ -50,9 +54,10 @@ are configured correctly.
 
 ## Stretch goals
 
--   Plot the H₂ ground-state energy against several bond distances.
+-   Plot the H₂ ground-state energy against several bond distances (Dissociation Curve).
 -   Investigate how circuit depth affects the VQE result.
--   Try the same workflow on lithium hydride (LiH).
+-   Simulate realistic quantum noise with `qiskit-aer` noise models.
+-   Try the same workflow on lithium hydride (LiH) or helium hydride ($HeH^+$).
 
 ## Think about it
 

@@ -12,6 +12,15 @@ This directory contains slide decks, Jupyter notebooks, and code samples for all
    - Superdense coding, quantum teleportation, and Bell state analysis.
    - Variational Quantum Eigensolvers (VQE) and Cloud execution with IBM Quantum primitives.
 
+## Interactive Workshop Notebooks
+
+- **[`intro_to_quantum_chemistry_vqe.ipynb`](./02-quantum-circuits-algorithms/notebooks/intro_to_quantum_chemistry_vqe.ipynb)** (also directly accessible at [`workshops/intro_to_quantum_chemistry_vqe.ipynb`](./intro_to_quantum_chemistry_vqe.ipynb)):
+  - Ground-state energy simulation of molecular hydrogen ($H_2$) using Qiskit.
+  - Molecular orbital reduction, Hamiltonian Pauli representation, and hardware-efficient ansatz design.
+  - Dual-panel VQE convergence analysis and chemical accuracy ($1.6\text{ mHa}$) evaluation.
+  - Potential Energy Surface (PES) dissociation curve mapping with equilibrium bond detection ($R \approx 0.74\text{ \AA}$).
+  - Full execution support for Google Colab (one-click badge included) and VS Code Jupyter.
+
 ## Environment Setup
 Recommended Python 3.10+ virtual environment:
 ```bash
