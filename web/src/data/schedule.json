@@ -6,7 +6,7 @@
     { "time": "15:10 – 16:00 GMT", "activity": "Main Lecture / Keynote Presentation" },
     { "time": "16:00 – 16:10 GMT", "activity": "Live Q&A" },
     { "time": "16:10 – 16:45 GMT", "activity": "Hands-on Lab & Interactive Notebook Demo" },
-    { "time": "16:45 – 17:00 GMT", "activity": "Session Wrap-up & Attendance Check" }
+    { "time": "16:45 – 17:00 GMT", "activity": "Session Wrap-up" }
   ],
   "days": [
     {

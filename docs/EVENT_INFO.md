@@ -10,5 +10,5 @@
 - **Meeting Link:** [Microsoft Teams Meeting](https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA) (`https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA`)
 - **Registration:** Free via Luma (`https://luma.com/b5udyp52`)
 - **Discord:** Gated invite sent to registered attendee email addresses.
-- **Theme Whitepaper:** `A Decade in the Cloud_ The Evolution of Quantum Computing.pdf`
+- **Participant Resources & Presentations:** Stored in [`resources/`](../resources/) — includes `resources/presentations/A Decade in the Cloud_ The Evolution of Quantum Computing.pdf`
 - **Hackathon Materials Attribution:** Initial hackathon framework, evaluation structure, and challenges 01–08 sourced and adapted from [QuantumKE](https://github.com/QuantumKE) (Qiskit Fall Fest Nairobi 2026); challenges 09–10 authored by the KNUST team.

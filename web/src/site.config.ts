@@ -27,7 +27,6 @@ export const siteConfig = {
   links: {
     register: "https://luma.com/b5udyp52", // Luma event registration URL
     meeting: "https://teams.microsoft.com/meet/3177570426321958?p=2R5WoAeQTavtoxmVKA", // Microsoft Teams meeting URL
-    themePaper: "/assets/docs/A Decade in the Cloud_ The Evolution of Quantum Computing.pdf", // Decade of Quantum theme whitepaper
     discordInviteVisible: false, // If false, displays copy explaining invite is sent post-registration
     discordInviteUrl: "https://discord.gg/example-knust-qiskit", // Activated only if discordInviteVisible is true
     email: "qiskit.knust@gmail.com",
