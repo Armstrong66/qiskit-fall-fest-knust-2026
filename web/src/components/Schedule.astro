@@ -1,68 +1,182 @@
 ---
+import { siteConfig } from '../site.config';
 import scheduleData from '../data/schedule.json';
 import SectionHeading from './ui/SectionHeading.astro';
 import GlowCard from './ui/GlowCard.astro';
+import Button from './ui/Button.astro';
 ---
 
 <section id="schedule" class="py-20 sm:py-28 relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <SectionHeading
-      title="Workshop & Hackathon Schedule"
-      subtitle="Structured learning pathways from fundamentals to quantum application development."
+      title="Event Schedule & Curriculum"
+      subtitle="5 days of quantum computing — from theoretical foundations to quantum chemistry, generative AI, and hackathon finals."
     />
 
-    {scheduleData.isTbd ? (
-      <div class="space-y-8">
-        
-        <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-brand-500/30 bg-[#121722]/80 text-center max-w-3xl mx-auto">
-          <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">
-            Full Daily Timetable Releasing Soon
-          </h3>
+    <!-- Daily Timing & Operating Rhythm Card -->
+    <div class="mb-12">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-brand-500/30 bg-[#121722]/80 shadow-glow-sm">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-6 border-b border-white/10">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-emerald-400">Daily Operating Rhythm</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">
+              Daily Live Sessions: {scheduleData.dailyTiming}
+            </h3>
+            <p class="text-carbon-300 text-xs sm:text-sm mt-1">
+              Virtual via {siteConfig.format.platform} · Interactive labs, Q&A, and live code walkthroughs
+            </p>
+          </div>
 
-          <p class="text-carbon-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            {scheduleData.tbdNotice}
-          </p>
-        </div>
-
-        <div class="mt-12">
-          <h4 class="text-xs font-mono font-semibold uppercase tracking-wider text-carbon-400 text-center mb-6">
-            Planned Workshop & Track Focus Areas
-          </h4>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {scheduleData.tracks.map((track, i) => (
-              <GlowCard glowColor="purple" class="flex flex-col justify-between">
-                <div>
-                  <div class="w-8 h-8 rounded-lg bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-xs font-mono font-bold text-brand-300 mb-4">
-                    0{i + 1}
-                  </div>
-
-                  <h5 class="text-lg font-bold text-white mb-2">
-                    {track.name}
-                  </h5>
-
-                  <p class="text-xs sm:text-sm text-carbon-300 leading-relaxed">
-                    {track.description}
-                  </p>
-                </div>
-              </GlowCard>
-            ))}
+          <div class="flex items-center gap-3 shrink-0">
+            <Button
+              href={siteConfig.links.meeting}
+              variant="primary"
+              size="sm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2"
+            >
+              <span>Join Teams Meeting</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </Button>
           </div>
         </div>
 
+        <!-- 5-step daily operating rhythm timeline -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-6">
+          {scheduleData.operatingRhythm.map((step) => (
+            <div class="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06] flex flex-col justify-between">
+              <span class="text-[11px] font-mono text-quantum-cyan font-semibold mb-1">
+                {step.time}
+              </span>
+              <span class="text-xs text-carbon-200 leading-snug">
+                {step.activity}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-    ) : (
-      <div class="space-y-6">
-        {scheduleData.days.map((day) => (
-          <GlowCard class="p-6">
-            <h3 class="text-xl font-bold text-white mb-4">
-              {day.title}
-            </h3>
+    </div>
+
+    <!-- Day-by-Day Agenda Cards -->
+    <div class="space-y-6">
+      {scheduleData.days.map((day) => (
+        <GlowCard glowColor="purple" class="relative overflow-hidden">
+          
+          <!-- Day Header Strip -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 mb-5 border-b border-white/10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-500/20 border border-brand-500/40 flex items-center justify-center text-sm font-mono font-extrabold text-brand-300 shrink-0">
+                0{day.dayNumber}
+              </div>
+              <div>
+                <div class="text-xs font-mono text-carbon-400">
+                  {day.date}
+                </div>
+                <h4 class="text-lg sm:text-xl font-bold text-white">
+                  {day.theme}
+                </h4>
+              </div>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-xs font-mono text-carbon-300 shrink-0 self-start sm:self-auto">
+              <span class="w-1.5 h-1.5 rounded-full bg-quantum-cyan"></span>
+              <span>15:00 – 17:00 GMT</span>
+            </div>
+          </div>
+
+          <!-- 2-Column Sessions Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- Main Session / Keynote -->
+            <div class="rounded-xl p-5 bg-white/[0.02] border border-white/[0.06] flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold bg-brand-500/20 text-brand-300 border border-brand-500/30">
+                    Main Session
+                  </span>
+                  <span class="text-xs font-mono text-carbon-400">
+                    {day.mainSession.time}
+                  </span>
+                </div>
+
+                <h5 class="text-base font-bold text-white mb-3">
+                  {day.mainSession.topic}
+                </h5>
+
+                <ul class="space-y-1.5 text-xs sm:text-sm text-carbon-300">
+                  {day.mainSession.concepts.map((concept) => (
+                    <li class="flex items-start gap-2">
+                      <span class="text-brand-400 mt-1 shrink-0">▸</span>
+                      <span>{concept}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <!-- Hands-on Lab & Workshop -->
+            <div class="rounded-xl p-5 bg-white/[0.02] border border-white/[0.06] flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold bg-quantum-cyan/20 text-quantum-cyan border border-quantum-cyan/30">
+                    Hands-on Lab &amp; Workshop
+                  </span>
+                  <span class="text-xs font-mono text-carbon-400">
+                    {day.labSession.time}
+                  </span>
+                </div>
+
+                <h5 class="text-base font-bold text-white mb-3">
+                  {day.labSession.topic}
+                </h5>
+
+                <p class="text-xs sm:text-sm text-carbon-300 leading-relaxed">
+                  {day.labSession.details}
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </GlowCard>
+      ))}
+    </div>
+
+    <!-- Workshop & Hackathon Tracks Grid -->
+    <div class="mt-16">
+      <h4 class="text-xs font-mono font-semibold uppercase tracking-wider text-carbon-400 text-center mb-6">
+        Curriculum &amp; Hackathon Challenge Focus Tracks
+      </h4>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {scheduleData.tracks.map((track, i) => (
+          <GlowCard glowColor="purple" class="flex flex-col justify-between">
+            <div>
+              <div class="w-8 h-8 rounded-lg bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-xs font-mono font-bold text-brand-300 mb-4">
+                0{i + 1}
+              </div>
+
+              <h5 class="text-lg font-bold text-white mb-2">
+                {track.name}
+              </h5>
+
+              <p class="text-xs sm:text-sm text-carbon-300 leading-relaxed">
+                {track.description}
+              </p>
+            </div>
           </GlowCard>
         ))}
       </div>
-    )}
+    </div>
 
   </div>
 </section>

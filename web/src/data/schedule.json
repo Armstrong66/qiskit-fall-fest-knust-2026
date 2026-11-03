@@ -1,6 +1,114 @@
 {
-  "isTbd": true,
-  "tbdNotice": "The complete workshop agenda and hackathon timeline are currently being finalized with IBM Quantum facilitators. Registered attendees will receive calendar invites.",
+  "isTbd": false,
+  "dailyTiming": "3:00 PM – 5:00 PM GMT",
+  "operatingRhythm": [
+    { "time": "15:00 – 15:10 GMT", "activity": "Welcome, Daily Warmup & Interactive Icebreaker" },
+    { "time": "15:10 – 16:00 GMT", "activity": "Main Lecture / Keynote Presentation" },
+    { "time": "16:00 – 16:10 GMT", "activity": "Live Q&A" },
+    { "time": "16:10 – 16:45 GMT", "activity": "Hands-on Lab & Interactive Notebook Demo" },
+    { "time": "16:45 – 17:00 GMT", "activity": "Session Wrap-up & Attendance Check" }
+  ],
+  "days": [
+    {
+      "dayNumber": 1,
+      "date": "Monday, November 2, 2026",
+      "shortDate": "Mon, Nov 2",
+      "theme": "Kick-Off: The Quantum Era & Hackathon Launch",
+      "mainSession": {
+        "time": "15:10 – 16:00 GMT",
+        "topic": "Introduction to Quantum Technologies & Global Cloud Landscape",
+        "concepts": [
+          "The evolution of quantum computing from theoretical physics to cloud utility.",
+          "Real-world applications across cryptography, chemistry, optimization, and AI.",
+          "Navigating the global quantum ecosystem and open-source tools."
+        ]
+      },
+      "labSession": {
+        "time": "16:10 – 16:45 GMT",
+        "topic": "Hackathon Launchpad & Track Deep Dive",
+        "details": "Official walkthrough of project tracks, guidelines, and reference code: Quantum Random Number Generation (QRNG), Quantum Chemistry & Materials Simulation, Quantum Generative AI, and more."
+      }
+    },
+    {
+      "dayNumber": 2,
+      "date": "Tuesday, November 3, 2026",
+      "shortDate": "Tue, Nov 3",
+      "theme": "Foundations: Quantum Mechanics & First Circuits",
+      "mainSession": {
+        "time": "15:10 – 16:00 GMT",
+        "topic": "Introduction to Quantum Mechanics: Superposition & Measurement",
+        "concepts": [
+          "Classical bits vs. Quantum bits (qubits) and state representation.",
+          "The principles of superposition, quantum phase, and measurement collapse.",
+          "Introduction to basic single-qubit quantum gates."
+        ]
+      },
+      "labSession": {
+        "time": "16:10 – 16:45 GMT",
+        "topic": "Building Your First Quantum Circuit in Qiskit",
+        "details": "Implementing a Quantum Coin Flipper using the Hadamard (H) gate, visualizing statevectors, and simulating measurement shots using AerSimulator."
+      }
+    },
+    {
+      "dayNumber": 3,
+      "date": "Wednesday, November 4, 2026",
+      "shortDate": "Wed, Nov 4",
+      "theme": "Pathways & Applications: Quantum Chemistry",
+      "mainSession": {
+        "time": "15:10 – 16:00 GMT",
+        "topic": "From Curiosity to Contribution: Navigating a Quantum Career",
+        "concepts": [
+          "Interdisciplinary pathways into quantum computing (STEM, software, and research).",
+          "Emerging industry roles, academic fellowships, and open-source contributions.",
+          "Practical strategies for transitioning from beginner to active contributor."
+        ]
+      },
+      "labSession": {
+        "time": "16:10 – 16:45 GMT",
+        "topic": "Molecular Energy Simulation using Qiskit Nature",
+        "details": "Formulating molecular Hamiltonians on quantum computers, using the Variational Quantum Eigensolver (VQE) to compute ground state energy, and plotting H₂ dissociation curves."
+      }
+    },
+    {
+      "dayNumber": 4,
+      "date": "Thursday, November 5, 2026",
+      "shortDate": "Thu, Nov 5",
+      "theme": "A Decade in the Cloud & Quantum Generative AI",
+      "mainSession": {
+        "time": "15:05 – 16:00 GMT",
+        "topic": "Qiskit 101 & A Decade on the Cloud / QCAT Spotlight",
+        "concepts": [
+          "Celebrating 10 years of cloud-accessible quantum hardware.",
+          "Modern Qiskit runtime architectures and primitives (Sampler & Estimator).",
+          "Spotlight on regional research initiatives in Quantum Computing & Assistive Technologies (QCAT)."
+        ]
+      },
+      "labSession": {
+        "time": "16:10 – 16:45 GMT",
+        "topic": "Introduction to Quantum Generative Modeling",
+        "details": "Implementing a 2-Qubit Parameterized Quantum Circuit (PQC) as an implicit generative sampler and training variational rotation parameters (θ) with classical optimizers."
+      }
+    },
+    {
+      "dayNumber": 5,
+      "date": "Friday, November 6, 2026",
+      "shortDate": "Fri, Nov 6",
+      "theme": "Demo Day: Hackathon Finals & Awards",
+      "mainSession": {
+        "time": "15:10 – 16:15 GMT",
+        "topic": "Hackathon Pitch Sprints & Research Showcase",
+        "concepts": [
+          "Finalist team rapid-fire project demos, technical code walkthroughs, and jury Q&A.",
+          "Research showcase highlighting undergraduate and graduate quantum research projects (16:15 – 16:30)."
+        ]
+      },
+      "labSession": {
+        "time": "16:30 – 17:00 GMT",
+        "topic": "Championship Quiz & Grand Finale",
+        "details": "Championship Quiz competition, winner announcements, presentation of participation certificates, and official closing remarks."
+      }
+    }
+  ],
   "tracks": [
     {
       "name": "Foundations of Quantum",
@@ -12,12 +120,11 @@
     },
     {
       "name": "Decade of Quantum Applications",
-      "description": "Variational quantum algorithms (VQE, QAOA), quantum chemistry, and machine learning."
+      "description": "Variational quantum algorithms (VQE), molecular simulation, and generative modeling."
     },
     {
       "name": "KNUST Quantum Hackathon",
-      "description": "Collaborative problem-solving challenge with mentorship and recognition."
+      "description": "Collaborative problem-solving challenge with mentorship, pitch sprints, and recognition."
     }
-  ],
-  "days": []
+  ]
 }
