@@ -67,3 +67,9 @@ atoms infinitely far apart?
 **Important:** This is a learning exercise. A successful simulation
 demonstrates a quantum-chemistry workflow; it does not demonstrate
 quantum advantage.
+
+## Foundational Literature & Citations
+
+- **The Origin of VQE:** Peruzzo, A., McClean, J., Shadbolt, P., et al. (2014). *A variational eigenvalue solver on a photonic quantum processor*. Nature Communications, 5, 4213. [DOI: 10.1038/ncomms5213](https://doi.org/10.1038/ncomms5213)
+- **Definitive Quantum Chemistry Review:** Cao, Y., Romero, J., Olson, J. P., et al. (2019). *Quantum Chemistry in the Age of Quantum Computing*. Chemical Reviews, 119(19), 10856–10915. [DOI: 10.1021/acs.chemrev.8b00803](https://doi.org/10.1021/acs.chemrev.8b00803) | [arXiv:1812.09976](https://arxiv.org/abs/1812.09976)
+- **Variational Quantum Algorithms Theory:** McClean, J. R., Romero, J., Babbush, R., & Aspuru-Guzik, A. (2016). *The theory of variational hybrid quantum-classical algorithms*. New Journal of Physics, 18(2), 023023. [DOI: 10.1088/1367-2630/18/2/023023](https://doi.org/10.1088/1367-2630/18/2/023023)
